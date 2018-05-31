@@ -1,0 +1,237 @@
+/*Use three @media screen tags, each with one of these max-widths: 980px, 768px and 640px*/
+
+body {
+    font-family: Arial, "Helvetica-Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    color: #777777;
+    background-image: url(../images/light-grey-terrazzo.png);
+    line-height: 35px;
+
+}
+#active {
+    font-weight: bolder;
+}
+ * {
+     box-sizing: border-box;
+ }
+
+ h1 {
+     font-size: 1.5em;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-weight: bold;
+     padding-bottom: 20px;
+     line-height: 50px;
+     border-bottom: 3px solid #dddddd;
+     color: #4aaaa5;
+
+    
+ }
+ h2 {
+     font-size: 1.5em;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-weight: bold;
+     color: #4aaaa5;
+     margin: 40px 0 0 20px;
+     padding: 12px 0 24px;
+ }
+ .container {
+     width: 100%;
+     max-width: 960px;
+     margin: 0 auto;
+     clear: both;
+ }
+/* This is the header */
+ #helper {
+     position: fixed;
+     width: 100%;
+     margin: 0 0 30px;
+     color: #ffffff;
+     background-color: #ffffff;
+     border-bottom: 2px solid #cccccc;
+     z-index: 3;
+     overflow: auto;
+
+ }
+ #myName {
+     float: left;
+     width: 250px;
+     height: 90px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 30px;
+     font-weight: 700;
+     line-height: 90px;
+     color: #ffffff;
+     text-align: center;
+     background-color: #4aaaa5;
+     text-decoration: none;
+
+ }
+ nav {
+     float: right;
+     margin-top: 25px;
+
+
+ }
+ nav a {
+     display: inline-block;
+     color: #999999;
+     text-decoration: none;
+     padding-left: 20px;
+     margin-left: 10px;
+    
+ }
+ a.borderLeft {
+     border-left: 1px solid #999999;
+     
+ }
+ /* This is the About me section */
+ #main {
+     padding-top: 130px;
+     min-height: calc(100vh - 70px);
+ }
+ .mySection {
+     float: left;
+     background-color: #ffffff;
+     border: 1px solid #dddddd;
+     max-width: 960px;
+     width: 100%;
+     
+     padding: 30px;
+ }
+  p {
+      margin: 10px 0 20px;
+  }
+  .myImage {
+      float: left;
+      width: 200px;
+      height: 200px;
+      margin-top: 15px;
+      margin-right: 20px;
+  }
+
+/* This is the footer section */
+ footer{
+     clear: both;
+     color: #ffffff;
+     background-color: #666666;
+     border-top: 5px solid #4aaaa5;
+     height: 50px;
+     text-align: center;
+     padding: 30px 0;
+     line-height: 13px;
+     width: 100%;
+     position: fixed;
+     bottom: 0;
+
+
+ }
+
+ /* This is the form stuff */
+ .relative {
+    padding-top: 150px;
+    border-top: 2px solid #cccccc;
+
+}
+.wrapper {
+    position: relative;
+}
+
+.myButton {
+    color: white;
+	background-color: #4aaaa5;
+	padding: 10px 20px;
+	width: 15%;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+  
+form {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 1em;
+    margin-top: 30px;
+	color:#777777;
+}
+input {
+	border: .5px solid #999999;
+	width: 98%;
+	margin: 10px 0px 10px 0px;
+	padding: 5px;
+}
+textarea {
+	border: .5px solid #999999;
+	width: 98%;
+	margin: 10px 0px 40px 0px;
+	padding: 5px;
+}
+.theForm:focus {
+	background: #ffefd5;
+	
+}
+/* This is the portfolio stuff */
+
+.picture {
+    position: relative;
+    float: left;
+    width: 300px;
+    margin: 30px 30px 10px 10px;
+    overflow: auto;
+
+}
+
+.picture img {
+    width: 100%;
+    opacity: .75;
+}
+
+.picture p {
+    position: absolute;
+    bottom: 20px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+
+@media screen and (max-width: 980px) {
+    
+    .mySection {
+        max-width: 65%;
+        margin: 20px 0 0 30px;
+       
+    }
+    #myName {
+        margin-left: 30px;
+    }
+    nav {
+        margin-right: 30px;
+        font-size: 1em;
+    }
+    .picture {
+        margin: 20px 16px 10px 5px;
+        width: 260px;
+    
+    }
+    
+    .picture p {  
+        padding: 6px;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+
+}
+@media screen and (min-width: 641px) {
+    .mySection {
+        width: 75%;
+    }
+  
+}
+    
