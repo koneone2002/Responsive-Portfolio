@@ -115,13 +115,15 @@ body {
      color: #ffffff;
      background-color: #666666;
      border-top: 5px solid #4aaaa5;
+     border-bottom: 10px solid #666;
      height: 50px;
      text-align: center;
      padding: 30px 0;
-     line-height: 13px;
-     width: 100%;
-     position: fixed;
-     bottom: 0;
+     font-size: 12px;
+     
+   
+   
+  
 
 
  }
@@ -162,7 +164,7 @@ input {
 textarea {
 	border: .5px solid #999999;
 	width: 98%;
-	margin: 10px 0px 40px 0px;
+	margin: 10px 0px 20px 0px;
 	padding: 5px;
 }
 .theForm:focus {
@@ -199,7 +201,7 @@ textarea {
 
 }
 
-@media screen and (max-width: 980px) {
+ @media screen and (max-width: 980px) {
     
     .mySection {
         max-width: 65%;
@@ -220,18 +222,72 @@ textarea {
     }
     
     .picture p {  
-        padding: 6px;
+        padding: 6px
+    }
+    .myButton {
+        font-size: 14px;
     }
     
+}
+
+@media screen and (max-width: 768px) {
+    .mySection {
+        max-width: 95%;
+        margin-left: 20px;
+    }
+    nav {
+        margin-right: 40px;
+        font-size: 1em;
+    }
+    .picture {
+        margin: 20px 20px 10px 11px;
+        width: 300px;
+    
+    }
 }
 
 @media screen and (max-width: 640px) {
 
-}
-@media screen and (min-width: 641px) {
+    .responsive {
+        display: block;
+        float: none;
+        width: 100%;
+        height: auto;
+    }
     .mySection {
-        width: 75%;
+        margin: 50px 15px 30px 15px;
+        overflow: auto;
+        
+    }
+    .picture {
+        margin: 20px 16px 30px 5px;
+        width: 530px;
+    
+    }
+    
+    .picture p {  
+        padding: 6px
+    }
+
+    
+    #myName {
+        margin: 0;
+        width: 100%;
+    }
+    nav {
+        
+        float: left;
+        margin: 5px 130px 5px;
+       
+        padding: 4px 30px 10px 30px;
+       
+
+        
+    }
+    .myButton {
+        font-size: 12px;
     }
   
 }
-    
+
+
